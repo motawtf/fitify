@@ -1,0 +1,1 @@
+Este archivo solo sirve para iniciar el repositorio de git, borrarme cuando se cree el proyecto.

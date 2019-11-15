@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Diario de rutinas de gym by Luis Villena y Sergio Gimenez",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motawtf/timefit.git"
+  },
+  "author": "Luis Villena y Sergio Gimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motawtf/timefit/issues"
+  },
+  "homepage": "https://github.com/motawtf/timefit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
