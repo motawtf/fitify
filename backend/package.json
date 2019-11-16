@@ -4,7 +4,7 @@
   "description": "Diario de rutinas de gym by Luis Villena y Sergio Gimenez",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
