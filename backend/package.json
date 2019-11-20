@@ -4,7 +4,7 @@
   "description": "Diario de rutinas de gym by Luis Villena y Sergio Gimenez",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/motawtf/timefit#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
