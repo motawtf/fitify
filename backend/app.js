@@ -25,6 +25,7 @@ app.use((req, res) => {
         message: err.message,
         name: err.name
     });
+    console.error(`[ERR] ${err}`);
 })
 
 app.listen(PORT, () => {
