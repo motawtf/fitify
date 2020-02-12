@@ -23,6 +23,43 @@
     </div>
 </form> -->
 
-<div id="login"> <!-- TODO -->
+<div id="login">
+    <div class="contenedor">
+        <div class="img">
+            <img src="../../assets/img/login-draw.svg">
+        </div>
 
+        <div class="login-container">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <h2>Bienvenido!</h2>
+
+                <div class="input-div one focus">
+                    <div class="i">
+                        <fa-icon [icon]="faUser"></fa-icon>
+                    </div>
+                    <div>
+                        <h5>Username</h5>
+                        <input type="text" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                    </div>
+                </div>
+
+                <div class="input-div two">
+                    <div class="i">
+                        <fa-icon [icon]="faLock"></fa-icon>
+                    </div>
+                    <div>
+                        <h5>Contraseña</h5>
+                        <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                    </div>
+                </div>
+                <a href="#">¿Olvidaste la contraseña?</a>
+                <a routerLink="/register">¿No tienes cuenta? ¡Registrate!</a>
+
+                <button [disabled]="loading" class="boton">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
